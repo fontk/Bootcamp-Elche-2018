@@ -1,0 +1,119 @@
+/* General styles */
+* {
+  font-family: 'Roboto', sans-serif; }
+
+#mainNav, #altNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+  border: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%; }
+  #mainNav ul, #altNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%;
+    padding: 10px 0 10px;
+    margin: 0; }
+  #mainNav li, #altNav li {
+    font-size: 1.4em;
+    height: 35px;
+    color: white; }
+    #mainNav li a, #altNav li a {
+      text-decoration: none;
+      color: white; }
+  #mainNav #logo, #altNav #logo {
+    margin-top: 80px;
+    padding-top: 10px;
+    width: 120px; }
+    #mainNav #logo polygon, #altNav #logo polygon {
+      stroke: white; }
+
+.linkPointer {
+  cursor: pointer; }
+
+#mainNav {
+  background-color: transparent; }
+
+#altNav {
+  background-image: -webkit-linear-gradient(225deg, #253c78, #0a2239);
+  background-image: -o-linear-gradient(225deg, #253c78, #0a2239);
+  background-image: linear-gradient(-135deg, #253c78, #0a2239); }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 100px 0 100px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-linear-gradient(225deg, #253c78, #0a2239);
+  background-image: -o-linear-gradient(225deg, #253c78, #0a2239);
+  background-image: linear-gradient(-135deg, #253c78, #0a2239); }
+  header canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0; }
+  header h1, header p {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    margin: 0;
+    padding: 15px 0 15px 0; }
+
+#calculadora {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; }
+  #calculadora form {
+    margin: 100px 0 0 0;
+    display: block; }
+
+#tituloTrabajo {
+  padding-top: 80px;
+  text-align: center; }

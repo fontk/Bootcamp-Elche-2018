@@ -1,0 +1,22 @@
+$primary_color: #253c78;
+$optional_color_1: #0a2239;
+$optional_color_2: #011936;
+$optional_color_3: #2c2e43;
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@mixin flex-centro_vertical {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+  @mixin flex-centro_horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+  }

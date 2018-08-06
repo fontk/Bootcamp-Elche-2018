@@ -1,0 +1,87 @@
+/* General styles */
+@import "_lib";
+
+%navbar--standard {
+  @include flex-centro_vertical();
+  height: 60px;
+  border: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  ul {
+    @include flex-centro_vertical();
+    list-style: none;
+    flex-basis: 35%;
+    padding: 10px 0 10px;
+    margin: 0;
+  }
+  li {
+    font-size: 1.4em;
+    height: 35px;
+    color: white;
+    a {
+      text-decoration: none;
+      color: white; 
+    }
+  }
+  #logo {
+    margin-top: 80px;
+    padding-top: 10px;
+    width: 120px;
+    
+    polygon {
+      stroke: white;
+    }
+  }
+}
+.linkPointer {
+  cursor: pointer;
+}
+
+
+#mainNav {
+  @extend %navbar--standard;
+  background-color: transparent;
+}
+#altNav {
+  @extend %navbar--standard;
+  background-image: linear-gradient(-135deg, $primary_color, $optional_color_1);
+}
+
+header {
+  @include flex-centro_horizontal();
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 100px 0 100px 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(-135deg, $primary_color, $optional_color_1);
+  canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+  h1, p {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    margin:0;
+    padding: 15px 0 15px 0;
+  }  
+}
+
+#calculadora {
+  @include flex-centro_vertical();
+  width: 100%;
+  height: 100vh;
+  form {
+    margin:100px 0 0 0;
+    display: block; 
+  }
+}
+#tituloTrabajo {
+  padding-top: 80px;
+  text-align: center;
+}
